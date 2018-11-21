@@ -1,5 +1,7 @@
 Creating RESTApi for Symfony4.
 Bundles used in project:
+
+
         "accesto/payum-pay-u": "0.3.1",
         "friendsofsymfony/rest-bundle": "^2.4",
         "jms/serializer": "^1.13",
