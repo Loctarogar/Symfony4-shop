@@ -1,0 +1,17 @@
+#logout
+logout:
+  path: /admin/logout
+
+api_login_check:
+    path: /api/login
+
+#payum_all:
+#    resource: "@PayumBundle/Resources/config/routing/all.xml"
+
+acme_payment_prepare:
+    path:     /prepare
+    defaults: { _controller: App\Controller\API\PaymentController:prepareAction }
+
+payum_capture_do:
+    path:     /api/done
+    defaults: { _controller: App\Controller\API\PaymentController:doneAction }

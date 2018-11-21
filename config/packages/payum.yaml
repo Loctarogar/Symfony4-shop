@@ -1,0 +1,54 @@
+payum:
+    security:
+        token_storage:
+            App\Entity\PaymentToken: { doctrine: orm }
+
+    storages:
+        App\Entity\Payment: { doctrine: orm }
+
+    gateways:
+        payu:
+            factory: payu
+            environment: secure
+            pos_id: 145227
+            signature_key: 13a980d4f851f3d9a1cfc792fb1f5e50
+            oauth_client_id: 300746
+            oauth_secret: 2ee86a66e5d97e3fadc400c9f19b065d
+
+#payum:
+#    security:
+#        token_storage:
+#            App\Entity\PaymentToken: { doctrine: orm }
+#
+#    storages:
+#       App\Entity\Payment: { doctrine: orm }
+#        paypal_express_checkout:
+#            factory: "paypal_express_checkout"
+#            username: "pochtapaypal-facilitator_api1.mail.ru"
+#            password: "GTHM6JW7FB6ZTBPY"
+#            signature: "A7KK7kT5rCwR6cuMWlEpMT7lNS9BA3OhBX3wKoW8BMwuiCf8Rbg6T39s"
+#            sandbox: true
+
+#payum:
+#    security:
+#        token_storage:
+#            App\Entity\PaymentToken:
+#                filesystem:
+#                    storage_dir: "%kernel.root_dir%/Resources/payments"
+#                    id_property: hash
+
+#    storages:
+#        App\Entity\Payment:
+#            filesystem:
+#                storage_dir: "%kernel.root_dir%/Resources/payments"
+#                id_property: id
+
+#    gateways:
+#        offline:
+#            factory: offline
+
+#        paypal_rest:
+#            factory:  "paypal_rest"
+#            client_id: "AW9fQNeaQsOEDP9QrieLAterIXzYWqqDHyqtgNSCFhbcdVTvgPguC_OeQtwZo8q6dWAz6Fv9_B4D_6Ed"
+#            client_secret: "EOIDwpQIAFCtR7Fg9m_tHrTo2LZkroNQJFuqc2YQSsOigkabksmDCX-OWZ4Z2LavsCRCotApsntp_mgX"
+#

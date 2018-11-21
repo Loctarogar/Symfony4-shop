@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+php php-cs-fixer.phar fix --config=.php_cs -v "$@"
