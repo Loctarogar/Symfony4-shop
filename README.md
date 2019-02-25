@@ -14,7 +14,7 @@ Bundles used in project:
         "namshi/jose": "^7.2",
         "openpayu/openpayu": " 2.2.*",                   //  
         "paypal/rest-api-sdk-php": "1.13.0",             //
-        "payum/offline": "^1.5",                         //paymant bundles doesn't work with symfony4
+        "payum/offline": "^1.5",                         //paymant bundles don't work with symfony4
         "payum/paypal-express-checkout-nvp": "^1.5",     //
         "payum/paypal-rest": "^1.5",                     //   
         "payum/payum-bundle": "^2.0",                    //
